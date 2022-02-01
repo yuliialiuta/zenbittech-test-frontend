@@ -107,7 +107,7 @@ class Form extends Component {
             body: jsonMessage
         };
 
-        fetch("", requestOptions)
+        fetch("https://zenbittech-test-server.herokuapp.com/feedbacks", requestOptions)
             .then(response => {
                 if(response.status == 201) {
                     alert("Your comment was sent. Thank you!");
